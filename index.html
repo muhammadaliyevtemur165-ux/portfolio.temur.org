@@ -1,0 +1,1361 @@
+<!DOCTYPE html>
+<html lang="uz" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Temur Muhammadaliyev — Veb-Dasturchi & Vibe Coder | Shaxsiy Portfolio</title>
+  <meta name="description" content="Temur Muhammadaliyev — 12 yoshli yosh iqtidorli veb-dasturchi va vibe coder. HTML, CSS, Bootstrap, AI, Tilda va Git yordamida zamonaviy, tezkor va estetik veb-saytlar yaratuvchi mutaxassis.">
+  <meta name="keywords" content="Temur Muhammadaliyev, Veb-dasturchi, Vibe coding, Frontend, HTML, CSS, Bootstrap, Tilda, Farg'ona, Quva, Orifboy, Dasturchi">
+  <meta name="author" content="Temur Muhammadaliyev">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='25' fill='%230a192f'/><text x='50%' y='58%' dominant-baseline='middle' text-anchor='middle' font-family='sans-serif' font-weight='900' font-size='44' fill='%23ffffff'>TM</text></svg>">
+  
+  <!-- Google Fonts: Plus Jakarta Sans & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- FontAwesome Icons for modern web tech icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Custom Smooth Motion Cursor -->
+  <div class="cursor-dot" id="cursorDot"></div>
+  <div class="cursor-outline" id="cursorOutline"></div>
+
+  <!-- Scroll Progress Indicator -->
+  <div class="scroll-progress-bar" id="scrollProgress"></div>
+
+  <!-- Background Ambient Glow Elements -->
+  <div class="ambient-glow glow-1"></div>
+  <div class="ambient-glow glow-2"></div>
+  <div class="ambient-glow glow-3"></div>
+
+  <!-- Header / Navigation -->
+  <header class="header" id="header">
+    <div class="container header-container">
+      <a href="#hero" class="brand-logo" id="brandLogo">
+        <span class="logo-box">TM</span>
+        <span class="logo-text">Temur<span class="accent-dot">.</span>dev</span>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav class="nav-menu" id="navMenu">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#hero" class="nav-link active">Bosh sahifa</a></li>
+          <li class="nav-item"><a href="#about" class="nav-link">Men haqimda</a></li>
+          <li class="nav-item"><a href="#skills" class="nav-link">Ko'nikmalar</a></li>
+          <li class="nav-item"><a href="#vibe" class="nav-link">Vibe Coding</a></li>
+          <li class="nav-item"><a href="#projects" class="nav-link">Loyihalar</a></li>
+          <li class="nav-item"><a href="#process" class="nav-link">Jarayon</a></li>
+          <li class="nav-item"><a href="#playground" class="nav-link">Vibe Lab</a></li>
+          <li class="nav-item"><a href="#faq" class="nav-link">FAQ</a></li>
+          <li class="nav-item"><a href="#contact" class="nav-link">Aloqa</a></li>
+        </ul>
+      </nav>
+
+      <!-- Header Action Elements -->
+      <div class="header-actions">
+        <!-- Live Fergana Time Badge -->
+        <div class="time-badge" id="liveTimeBadge" title="Farg'ona mahalliy vaqti">
+          <span class="pulse-indicator"></span>
+          <span class="time-text" id="liveClock">--:--:--</span>
+          <span class="time-city">Quva</span>
+        </div>
+
+        <!-- Theme Mode Toggle -->
+        <button class="theme-toggle-btn radius-btn" id="themeToggleBtn" aria-label="Mavzuni almashtirish" title="Oq / To'q Ko'k rejimi">
+          <i class="fa-solid fa-moon theme-icon-moon"></i>
+          <i class="fa-solid fa-sun theme-icon-sun"></i>
+        </button>
+
+        <!-- Direct Call CTA Button -->
+        <a href="tel:+998905607374" class="btn btn-primary radius-btn header-call-btn" id="headerCallBtn">
+          <i class="fa-solid fa-phone"></i>
+          <span>Bog'lanish</span>
+        </a>
+
+        <!-- Mobile Menu Toggle -->
+        <button class="mobile-toggle-btn" id="mobileToggleBtn" aria-label="Menyuni ochish">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section class="hero-section" id="hero">
+      <div class="container hero-container">
+        <!-- Hero Text Column -->
+        <div class="hero-content" data-reveal="fade-right">
+          <!-- Top Status Badges -->
+          <div class="badge-group">
+            <span class="hero-pill-badge">
+              <span class="pulse-dot"></span> 12 Yoshli Yosh Iqtidor
+            </span>
+            <span class="hero-pill-badge badge-location">
+              <i class="fa-solid fa-location-dot"></i> O'zbekiston, Farg'ona, Quva
+            </span>
+          </div>
+
+          <!-- Main Hero Title -->
+          <h1 class="hero-title">
+            G'oyalarni <span class="gradient-text">zamonaviy kod</span> va <span class="gradient-blue-text">toza estetikaga</span> aylantiruvchi yosh dasturchi.
+          </h1>
+
+          <!-- Hero Subtitle / Description -->
+          <p class="hero-description">
+            Salom! Men <strong>Temur Muhammadaliyev</strong>man. 12 yoshda bo'lishimga qaramay, zamonaviy veb texnologiyalari, tezkor <strong>Vibe Coding</strong> va kuchli UI/UX dizayn yordamida ko'zni quvontiradigan, chaqmoqdek tez ishlovchi veb-saytlar yarataman.
+          </p>
+
+          <!-- Key Highlights Bullet Bar -->
+          <div class="hero-perks">
+            <div class="perk-item">
+              <i class="fa-solid fa-bolt perk-icon"></i>
+              <span>Tezkor & Toza Kod</span>
+            </div>
+            <div class="perk-item">
+              <i class="fa-solid fa-gem perk-icon"></i>
+              <span>Zamonaviy UI/UX</span>
+            </div>
+            <div class="perk-item">
+              <i class="fa-solid fa-mobile-screen perk-icon"></i>
+              <span>100% Moslashuvchan</span>
+            </div>
+          </div>
+
+          <!-- Hero Action Buttons -->
+          <div class="hero-cta-group">
+            <a href="#projects" class="btn btn-primary btn-lg radius-btn motion-btn" id="heroExploreBtn">
+              <span>Loyihalarni ko'rish</span>
+              <i class="fa-solid fa-arrow-down"></i>
+            </a>
+            <a href="tel:+998905607374" class="btn btn-outline btn-lg radius-btn motion-btn" id="heroPhoneBtn">
+              <i class="fa-solid fa-phone-volume"></i>
+              <span>+998 90 560 73 74</span>
+            </a>
+          </div>
+
+          <!-- Quick Metrics Bar -->
+          <div class="hero-metrics">
+            <div class="metric-card">
+              <span class="metric-number" data-target="12">0</span>
+              <span class="metric-label">Yosh iqtidor</span>
+            </div>
+            <div class="metric-divider"></div>
+            <div class="metric-card">
+              <span class="metric-number" data-target="25">0</span><span class="metric-plus">+</span>
+              <span class="metric-label">Veb loyihalar</span>
+            </div>
+            <div class="metric-divider"></div>
+            <div class="metric-card">
+              <span class="metric-number" data-target="100">0</span><span class="metric-plus">%</span>
+              <span class="metric-label">Sifat & Diqqat</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Photo & Visual Column -->
+        <div class="hero-visual" data-reveal="fade-left">
+          <div class="visual-wrapper" id="heroVisualWrapper">
+            <!-- Decorative Backing Frames -->
+            <div class="visual-backdrop"></div>
+            <div class="visual-glow-ring"></div>
+
+            <!-- Profile Picture Box -->
+            <div class="profile-card radius-pic">
+              <img src="assets/temur.jpg" alt="Temur Muhammadaliyev - Veb-Dasturchi" class="profile-img radius-pic" id="temurHeroPic">
+              
+              <!-- Subtle Photo Overlay Gradient -->
+              <div class="profile-overlay"></div>
+
+              <!-- Floating Live Status Tag -->
+              <div class="floating-badge badge-status">
+                <span class="status-live-dot"></span>
+                <div>
+                  <div class="badge-title">Temur Muhammadaliyev</div>
+                  <div class="badge-subtitle">Vibe & Web Developer</div>
+                </div>
+              </div>
+
+              <!-- Floating Tech Badges -->
+              <div class="floating-badge badge-tech-1 float-anim-1">
+                <i class="fa-brands fa-html5 tech-badge-icon html-color"></i>
+                <span>HTML5 / CSS3</span>
+              </div>
+
+              <div class="floating-badge badge-tech-2 float-anim-2">
+                <i class="fa-brands fa-bootstrap tech-badge-icon bootstrap-color"></i>
+                <span>Bootstrap 5</span>
+              </div>
+
+              <div class="floating-badge badge-tech-3 float-anim-3">
+                <i class="fa-solid fa-wand-magic-sparkles tech-badge-icon ai-color"></i>
+                <span>Vibe Coding</span>
+              </div>
+
+              <div class="floating-badge badge-tech-4 float-anim-4">
+                <i class="fa-brands fa-git-alt tech-badge-icon git-color"></i>
+                <span>Git / GitHub</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- INFINITE LOGO / TECH TICKER MARQUEE -->
+    <section class="tech-marquee-section">
+      <div class="marquee-track">
+        <div class="marquee-content">
+          <span class="marquee-item"><i class="fa-brands fa-html5"></i> HTML5 Semantik</span>
+          <span class="marquee-bullet">•</span>
+          <span class="marquee-item"><i class="fa-brands fa-css3-alt"></i> CSS3 & Animatsiyalar</span>
+          <span class="marquee-bullet">•</span>
+          <span class="marquee-item"><i class="fa-brands fa-bootstrap"></i> Bootstrap 5</span>
+          <span class="marquee-bullet">•</span>
+          <span class="marquee-item"><i class="fa-solid fa-code"></i> Vibe Coding</span>
+          <span class="marquee-bullet">•</span>
+          <span class="marquee-item"><i class="fa-solid fa-layer-group"></i> Tilda Publishing</span>
+          <span class="marquee-bullet">•</span>
+          <span class="marquee-item"><i class="fa-brands fa-git-alt"></i> Git Versiyalar</span>
+          <span class="marquee-bullet">•</span>
+          <span class="marquee-item"><i class="fa-solid fa-compass-drafting"></i> Kuchli UI/UX</span>
+          <span class="marquee-bullet">•</span>
+          <span class="marquee-item"><i class="fa-solid fa-rocket"></i> Yuqori Tezlik</span>
+          <span class="marquee-bullet">•</span>
+        </div>
+        <!-- Duplicated for seamless infinite loop -->
+        <div class="marquee-content" aria-hidden="true">
+          <span class="marquee-item"><i class="fa-brands fa-html5"></i> HTML5 Semantik</span>
+          <span class="marquee-bullet">•</span>
+          <span class="marquee-item"><i class="fa-brands fa-css3-alt"></i> CSS3 & Animatsiyalar</span>
+          <span class="marquee-bullet">•</span>
+          <span class="marquee-item"><i class="fa-brands fa-bootstrap"></i> Bootstrap 5</span>
+          <span class="marquee-bullet">•</span>
+          <span class="marquee-item"><i class="fa-solid fa-code"></i> Vibe Coding</span>
+          <span class="marquee-bullet">•</span>
+          <span class="marquee-item"><i class="fa-solid fa-layer-group"></i> Tilda Publishing</span>
+          <span class="marquee-bullet">•</span>
+          <span class="marquee-item"><i class="fa-brands fa-git-alt"></i> Git Versiyalar</span>
+          <span class="marquee-bullet">•</span>
+          <span class="marquee-item"><i class="fa-solid fa-compass-drafting"></i> Kuchli UI/UX</span>
+          <span class="marquee-bullet">•</span>
+          <span class="marquee-item"><i class="fa-solid fa-rocket"></i> Yuqori Tezlik</span>
+          <span class="marquee-bullet">•</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- MEN HAQIMDA (ABOUT ME SECTION) -->
+    <section class="section about-section" id="about">
+      <div class="container">
+        <!-- Section Header -->
+        <div class="section-header" data-reveal="fade-up">
+          <div class="section-subtitle">
+            <i class="fa-solid fa-user-astronaut"></i> Tanishing
+          </div>
+          <h2 class="section-title">
+            Yosh Chegaramas — <span class="gradient-text">Natija Muhim</span>
+          </h2>
+          <p class="section-desc">
+            Har bir loyihaga qalb, intizom va zamonaviy ijodkorlik bilan yondashaman.
+          </p>
+        </div>
+
+        <div class="about-grid">
+          <!-- Left: About Narrative -->
+          <div class="about-story-card card radius-pic" data-reveal="fade-right">
+            <div class="story-badge">
+              <i class="fa-solid fa-fire"></i> Mening Tarixam va Qiziqishim
+            </div>
+            <h3 class="story-title">Farg'ona, Quvadan turib global internet maydoniga</h3>
+            <p class="story-paragraph">
+              Mening ismim <strong>Temur Muhammadaliyev</strong>. Yoshim 12 da. Ko'pchilik tengdoshlarim kompyuterni shunchaki o'yin deb bilsa, men dasturlash olamini haqiqiy sehr va imkoniyat deb qabul qildim. 
+            </p>
+            <p class="story-paragraph">
+              Farg'ona viloyatining go'zal <strong>Quva tumani, Orifboy</strong> qishlog'ida yashab, har kuni veb-texnologiyalar ustida tinimsiz izlanaman. Men uchun veb-sahifa yaratish — shunchaki kod yozish emas, balki foydalanuvchiga qulaylik, estetik zavq va biznesga aniq foyda keltiradigan raqamli san'at asari yaratishdir.
+            </p>
+            <p class="story-paragraph">
+              Men tezkor o'rganuvchi, yangi tendensiyalarni bir zumda o'zlashtiruvchi va <strong>Vibe Coding</strong> uslubida erkin, ritmli kod yarata oladigan yangi avlod veb-dasturchisiman.
+            </p>
+
+            <div class="story-quote">
+              <i class="fa-solid fa-quote-left quote-icon"></i>
+              <p>«Katta orzular yosh tanlamaydi. Eng yaxshi kod — bu sodda, chiroyli va mukammal ishlaydigan koddir.»</p>
+              <span class="quote-author">— Temur Muhammadaliyev</span>
+            </div>
+          </div>
+
+          <!-- Right: Key Info Cards & Quick Facts -->
+          <div class="about-facts-col" data-reveal="fade-left">
+            <!-- Fact Box 1: Location & Origin -->
+            <div class="fact-card card radius-pic">
+              <div class="fact-icon-wrapper location-icon">
+                <i class="fa-solid fa-map-location-dot"></i>
+              </div>
+              <div class="fact-info">
+                <h4>Hudud & Manzil</h4>
+                <p>O'zbekiston, Farg'ona viloyati, Quva tumani, Orifboy</p>
+                <span class="fact-badge">Vodiy iqtidori</span>
+              </div>
+            </div>
+
+            <!-- Fact Box 2: Work Philosophy -->
+            <div class="fact-card card radius-pic">
+              <div class="fact-icon-wrapper speed-icon">
+                <i class="fa-solid fa-bolt-lightning"></i>
+              </div>
+              <div class="fact-info">
+                <h4>Tezkorlik va Vibe</h4>
+                <p>G'oyadan tayyor saytga o'tish jarayonini tezkor va aniq bajarish</p>
+                <span class="fact-badge">Vibe Coding</span>
+              </div>
+            </div>
+
+            <!-- Fact Box 3: Precision & Aesthetics -->
+            <div class="fact-card card radius-pic">
+              <div class="fact-icon-wrapper design-icon">
+                <i class="fa-solid fa-wand-magic-sparkles"></i>
+              </div>
+              <div class="fact-info">
+                <h4>Kuchli UI/UX Qarash</h4>
+                <p>Oq va to'q ko'k ranglar uyg'unligi, mayin soyalar va mukammal burchaklar</p>
+                <span class="fact-badge">Piksel Aniqligi</span>
+              </div>
+            </div>
+
+            <!-- Fact Box 4: Continuous Growth -->
+            <div class="fact-card card radius-pic">
+              <div class="fact-icon-wrapper discipline-icon">
+                <i class="fa-solid fa-chart-line"></i>
+              </div>
+              <div class="fact-info">
+                <h4>Doimiy O'sish & Git</h4>
+                <p>Har bir loyihada yangi narsa o'rganish, Git orqali toza versiyalash</p>
+                <span class="fact-badge">100% Intizom</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3 Pillars Feature Row -->
+        <div class="pillars-row" data-reveal="fade-up">
+          <div class="pillar-card card radius-pic">
+            <div class="pillar-number">01</div>
+            <h3>Yangi Avlod Tafakkuri</h3>
+            <p>Eskirgan qoliplarsiz, eng yangi veb-standartlar va zamonaviy dizayn uslublarini qo'llayman.</p>
+          </div>
+          <div class="pillar-card card radius-pic">
+            <div class="pillar-number">02</div>
+            <h3>Sinchkovlik & Toza Kod</h3>
+            <p>Keraksiz og'ir kutubxonalarsiz, yengil yuklanadigan va har qanday ekranda silliq ishlovchi struktura.</p>
+          </div>
+          <div class="pillar-card card radius-pic">
+            <div class="pillar-number">03</div>
+            <h3>Mas'uliyat va Aloqa</h3>
+            <p>Belgilangan muddatga qat'iy amal qilish va mijoz bilan doimo ochiq, samimiy muloqotda bo'lish.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- KO'NIKMALAR VA TEXNOLOGIYALAR (SKILLS SECTION) -->
+    <section class="section skills-section" id="skills">
+      <div class="container">
+        <div class="section-header" data-reveal="fade-up">
+          <div class="section-subtitle">
+            <i class="fa-solid fa-code"></i> Qurol-aslahalarim
+          </div>
+          <h2 class="section-title">
+            Mening <span class="gradient-text">Ko'nikmalarim</span> va Texnologiyalarim
+          </h2>
+          <p class="section-desc">
+            Veb-saytlarni sifatli, chiroyli va mustahkam yaratish uchun qo'llaydigan asosiy texnologiyalar to'plamim.
+          </p>
+        </div>
+
+        <!-- Main Skills Grid -->
+        <div class="skills-grid">
+          <!-- Skill Card 1: HTML5 -->
+          <div class="skill-card card radius-pic" data-reveal="fade-up" data-delay="100">
+            <div class="skill-card-top">
+              <div class="skill-icon-box html-glow">
+                <i class="fa-brands fa-html5"></i>
+              </div>
+              <span class="skill-level-badge">Mukammal</span>
+            </div>
+            <h3 class="skill-name">HTML5 Semantik Kod</h3>
+            <p class="skill-desc">
+              To'g'ri teglardan foydalanish, qidiruv tizimlari (SEO) uchun toza semantika va qulay kontent arxitekturasi.
+            </p>
+            <div class="skill-progress-wrapper">
+              <div class="skill-progress-info">
+                <span>Bilish darajasi</span>
+                <span class="skill-percent">95%</span>
+              </div>
+              <div class="progress-track">
+                <div class="progress-fill" style="width: 95%;"></div>
+              </div>
+            </div>
+            <div class="skill-tags">
+              <span>Semantika</span>
+              <span>SEO</span>
+              <span>Accessibility</span>
+            </div>
+          </div>
+
+          <!-- Skill Card 2: CSS3 & Motion -->
+          <div class="skill-card card radius-pic" data-reveal="fade-up" data-delay="200">
+            <div class="skill-card-top">
+              <div class="skill-icon-box css-glow">
+                <i class="fa-brands fa-css3-alt"></i>
+              </div>
+              <span class="skill-level-badge">Ilg'or</span>
+            </div>
+            <h3 class="skill-name">CSS3 & Zamonaviy Dizayn</h3>
+            <p class="skill-desc">
+              Flexbox, CSS Grid, silliq animatsiyalar, glassmorphism, mayin soyalar va har qanday ekranga moslashuvchanlik.
+            </p>
+            <div class="skill-progress-wrapper">
+              <div class="skill-progress-info">
+                <span>Bilish darajasi</span>
+                <span class="skill-percent">92%</span>
+              </div>
+              <div class="progress-track">
+                <div class="progress-fill" style="width: 92%;"></div>
+              </div>
+            </div>
+            <div class="skill-tags">
+              <span>Flex/Grid</span>
+              <span>Keyframes</span>
+              <span>Responsive</span>
+            </div>
+          </div>
+
+          <!-- Skill Card 3: Bootstrap 5 -->
+          <div class="skill-card card radius-pic" data-reveal="fade-up" data-delay="300">
+            <div class="skill-card-top">
+              <div class="skill-icon-box bootstrap-glow">
+                <i class="fa-brands fa-bootstrap"></i>
+              </div>
+              <span class="skill-level-badge">Amaliy</span>
+            </div>
+            <h3 class="skill-name">Bootstrap 5 Framework</h3>
+            <p class="skill-desc">
+              Tezkor grid tizimi, tayyor va moslashuvchan komponentlar, modal oynalar, navbarlar va zamonaviy formalar.
+            </p>
+            <div class="skill-progress-wrapper">
+              <div class="skill-progress-info">
+                <span>Bilish darajasi</span>
+                <span class="skill-percent">90%</span>
+              </div>
+              <div class="progress-track">
+                <div class="progress-fill" style="width: 90%;"></div>
+              </div>
+            </div>
+            <div class="skill-tags">
+              <span>12-Col Grid</span>
+              <span>Components</span>
+              <span>Utilities</span>
+            </div>
+          </div>
+
+          <!-- Skill Card 4: AI & Vibe Coding -->
+          <div class="skill-card card radius-pic" data-reveal="fade-up" data-delay="400">
+            <div class="skill-card-top">
+              <div class="skill-icon-box ai-glow">
+                <i class="fa-solid fa-brain"></i>
+              </div>
+              <span class="skill-level-badge">10x Tezlik</span>
+            </div>
+            <h3 class="skill-name">AI Vositalari & Vibe Coding</h3>
+            <p class="skill-desc">
+              Zamonaviy sun'iy intellekt vositalari bilan ishlash, aniq prompt muhandisligi va g'oyalarni bir zumda kodga aylantirish.
+            </p>
+            <div class="skill-progress-wrapper">
+              <div class="skill-progress-info">
+                <span>Bilish darajasi</span>
+                <span class="skill-percent">94%</span>
+              </div>
+              <div class="progress-track">
+                <div class="progress-fill" style="width: 94%;"></div>
+              </div>
+            </div>
+            <div class="skill-tags">
+              <span>AI Prompting</span>
+              <span>Prototyping</span>
+              <span>Workflow</span>
+            </div>
+          </div>
+
+          <!-- Skill Card 5: Tilda Publishing -->
+          <div class="skill-card card radius-pic" data-reveal="fade-up" data-delay="500">
+            <div class="skill-card-top">
+              <div class="skill-icon-box tilda-glow">
+                <i class="fa-solid fa-cubes"></i>
+              </div>
+              <span class="skill-level-badge">Tezkor Yechim</span>
+            </div>
+            <h3 class="skill-name">Tilda Publishing</h3>
+            <p class="skill-desc">
+              Zero Block yordamida individual dizayn yaratish, biznes landing sahifalari, animatsiyalar va to'lov tizimlari integratsiyasi.
+            </p>
+            <div class="skill-progress-wrapper">
+              <div class="skill-progress-info">
+                <span>Bilish darajasi</span>
+                <span class="skill-percent">88%</span>
+              </div>
+              <div class="progress-track">
+                <div class="progress-fill" style="width: 88%;"></div>
+              </div>
+            </div>
+            <div class="skill-tags">
+              <span>Zero Block</span>
+              <span>Landing Page</span>
+              <span>No-Code</span>
+            </div>
+          </div>
+
+          <!-- Skill Card 6: Git & GitHub -->
+          <div class="skill-card card radius-pic" data-reveal="fade-up" data-delay="600">
+            <div class="skill-card-top">
+              <div class="skill-icon-box git-glow">
+                <i class="fa-brands fa-git-alt"></i>
+              </div>
+              <span class="skill-level-badge">Standart</span>
+            </div>
+            <h3 class="skill-name">Git & GitHub Nazorati</h3>
+            <p class="skill-desc">
+              Versiyalarni nazorat qilish, branchlar bilan ishlash, GitHub Pages orqali saytlarni internetga xavfsiz deploy qilish.
+            </p>
+            <div class="skill-progress-wrapper">
+              <div class="skill-progress-info">
+                <span>Bilish darajasi</span>
+                <span class="skill-percent">85%</span>
+              </div>
+              <div class="progress-track">
+                <div class="progress-fill" style="width: 85%;"></div>
+              </div>
+            </div>
+            <div class="skill-tags">
+              <span>Version Control</span>
+              <span>Deploy</span>
+              <span>Repository</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- VIBE CODING FALSAFASI (SPECIAL SECTION) -->
+    <section class="section vibe-section" id="vibe">
+      <div class="container">
+        <div class="vibe-banner card radius-pic" data-reveal="zoom-in">
+          <div class="vibe-content">
+            <div class="vibe-badge">
+              <i class="fa-solid fa-compact-disc vibe-spin"></i> Yangi Avlod Uslubi
+            </div>
+            <h2 class="vibe-title">
+              «Vibe Coding» — Bu Nima va Nega U Vebni O'zgartirmoqda?
+            </h2>
+            <p class="vibe-text">
+              <strong>Vibe Coding</strong> — bu faqatgina quruq kod yozish emas. Bu dasturlash ritmi, erkin ilhom, zamonaviy sun'iy intellekt vositalari va estetik tuyg'uning yagona oqimda birlashishidir.
+            </p>
+            <p class="vibe-text">
+              12 yoshda men qoliplarga bog'lanib qolmayman. Vibe Coding yordamida loyihalarni o'nlab kunlab emas, bir necha soat ichida jonli, ishchi va jozibador ko'rinishga keltira olaman. Kod shunchaki ishlashi yetarli emas — u o'zida yengillik, nafosat va dinamikani aks ettirishi lozim.
+            </p>
+
+            <div class="vibe-features-row">
+              <div class="vibe-feature-box">
+                <div class="vibe-feature-icon"><i class="fa-solid fa-wave-square"></i></div>
+                <h4>Oqim Holati (Flow)</h4>
+                <p>Musiqa, diqqat va ilhom ostida uzluksiz, xatosiz ijod.</p>
+              </div>
+              <div class="vibe-feature-box">
+                <div class="vibe-feature-icon"><i class="fa-solid fa-gauge-high"></i></div>
+                <h4>10x Tezkor Yechim</h4>
+                <p>G'oyadan tayyor natijaga eng qisqa va toza yo'l bilan yetishish.</p>
+              </div>
+              <div class="vibe-feature-box">
+                <div class="vibe-feature-icon"><i class="fa-solid fa-eye"></i></div>
+                <h4>Mukammal UX Hissiyot</h4>
+                <p>Har bir tugma bosilishi, har bir burchak va soya shinam bo'lishi shart.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TANLANGAN LOYIHALAR (PROJECTS SECTION) -->
+    <section class="section projects-section" id="projects">
+      <div class="container">
+        <div class="section-header" data-reveal="fade-up">
+          <div class="section-subtitle">
+            <i class="fa-solid fa-folder-open"></i> Portfolio
+          </div>
+          <h2 class="section-title">
+            Tanlangan <span class="gradient-text">Veb Loyihalarim</span>
+          </h2>
+          <p class="section-desc">
+            Har biri alohida e'tibor, to'q ko'k va oq dizayn tamoyillari hamda moslashuvchanlik bilan yaratilgan namunalar.
+          </p>
+        </div>
+
+        <!-- Project Filter Buttons -->
+        <div class="project-filter-bar" data-reveal="fade-up">
+          <button class="filter-btn radius-btn active" data-filter="all">Barchasi</button>
+          <button class="filter-btn radius-btn" data-filter="business">Biznes Landing</button>
+          <button class="filter-btn radius-btn" data-filter="ecommerce">E-Commerce</button>
+          <button class="filter-btn radius-btn" data-filter="creative">Tilda & Kreativ</button>
+        </div>
+
+        <!-- Projects Grid -->
+        <div class="projects-grid" id="projectsGrid">
+          <!-- Project 1: Digital Agency -->
+          <article class="project-card card radius-pic" data-category="business" data-reveal="fade-up" data-delay="100">
+            <div class="project-image-box">
+              <img src="assets/project_agency.jpg" alt="Nexus Digital Agency Web Portal" class="project-img radius-pic" loading="lazy">
+              <div class="project-badge-top">Biznes Landing</div>
+              <div class="project-overlay-action">
+                <button class="btn btn-primary radius-btn preview-project-btn" data-modal="modalAgency">
+                  <i class="fa-solid fa-expand"></i> Tafsilotlar
+                </button>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-meta-tags">
+                <span class="project-tech-tag">HTML5</span>
+                <span class="project-tech-tag">CSS3</span>
+                <span class="project-tech-tag">Bootstrap 5</span>
+                <span class="project-tech-tag">Vibe UI</span>
+              </div>
+              <h3 class="project-title">Nexus — Korporativ Agentlik Veb-sayti</h3>
+              <p class="project-text">
+                Raqamli kompaniyalar uchun to'q ko'k va oppoq ranglar balansiga ega elita korporativ landing page. Silliq scroll, interaktiv statistik grafiklar va toza semantik kod.
+              </p>
+              <div class="project-footer">
+                <span class="project-metric"><i class="fa-solid fa-check"></i> 100% Responsive</span>
+                <a href="#contact" class="project-link-btn radius-btn">
+                  <span>Buyurtma berish</span> <i class="fa-solid fa-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2: Gadget & Tech Store -->
+          <article class="project-card card radius-pic" data-category="ecommerce" data-reveal="fade-up" data-delay="200">
+            <div class="project-image-box">
+              <img src="assets/project_techstore.jpg" alt="Aetherial Tech & Gadgets Store" class="project-img radius-pic" loading="lazy">
+              <div class="project-badge-top">E-Commerce</div>
+              <div class="project-overlay-action">
+                <button class="btn btn-primary radius-btn preview-project-btn" data-modal="modalTech">
+                  <i class="fa-solid fa-expand"></i> Tafsilotlar
+                </button>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-meta-tags">
+                <span class="project-tech-tag">HTML5</span>
+                <span class="project-tech-tag">CSS3 Grid</span>
+                <span class="project-tech-tag">Glassmorphism</span>
+                <span class="project-tech-tag">JavaScript</span>
+              </div>
+              <h3 class="project-title">Aetherial — Kelajak Gadjetlari Do'koni</h3>
+              <p class="project-text">
+                Aqlli ko'zoynaklar, soatlar va zamonaviy aksessuarlar katalogi. To'q ko'k neon aksentlar, interaktiv mahsulot kartalari va mahsulot savatchasi simulyatsiyasi.
+              </p>
+              <div class="project-footer">
+                <span class="project-metric"><i class="fa-solid fa-check"></i> Kuchli UX Kartalar</span>
+                <a href="#contact" class="project-link-btn radius-btn">
+                  <span>Buyurtma berish</span> <i class="fa-solid fa-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3: Aurora Restaurant & Lounge -->
+          <article class="project-card card radius-pic" data-category="business" data-reveal="fade-up" data-delay="300">
+            <div class="project-image-box">
+              <img src="assets/project_cafe.jpg" alt="Aurora Fine Dining & Lounge" class="project-img radius-pic" loading="lazy">
+              <div class="project-badge-top">Restoran & Kafe</div>
+              <div class="project-overlay-action">
+                <button class="btn btn-primary radius-btn preview-project-btn" data-modal="modalCafe">
+                  <i class="fa-solid fa-expand"></i> Tafsilotlar
+                </button>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-meta-tags">
+                <span class="project-tech-tag">HTML5</span>
+                <span class="project-tech-tag">CSS3 Flex</span>
+                <span class="project-tech-tag">Bootstrap Modal</span>
+                <span class="project-tech-tag">SEO Optimized</span>
+              </div>
+              <h3 class="project-title">Aurora — Premium Restoran va Qahvaxona</h3>
+              <p class="project-text">
+                Shinam menyu ko'rinishi, stol buyurtma qilish (reservation) formasi, taomlar fotogalereyasi va mayin burchaklar bilan yaratilgan premium veb-portal.
+              </p>
+              <div class="project-footer">
+                <span class="project-metric"><i class="fa-solid fa-check"></i> Onlayn Bron Tizimi</span>
+                <a href="#contact" class="project-link-btn radius-btn">
+                  <span>Buyurtma berish</span> <i class="fa-solid fa-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 4: Studio Creo & Conference -->
+          <article class="project-card card radius-pic" data-category="creative" data-reveal="fade-up" data-delay="400">
+            <div class="project-image-box">
+              <img src="assets/project_creative.jpg" alt="Studio Creo Design Conference Landing" class="project-img radius-pic" loading="lazy">
+              <div class="project-badge-top">Tilda & Kreativ</div>
+              <div class="project-overlay-action">
+                <button class="btn btn-primary radius-btn preview-project-btn" data-modal="modalCreative">
+                  <i class="fa-solid fa-expand"></i> Tafsilotlar
+                </button>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-meta-tags">
+                <span class="project-tech-tag">Tilda Zero Block</span>
+                <span class="project-tech-tag">CSS Custom</span>
+                <span class="project-tech-tag">3D Geometriya</span>
+                <span class="project-tech-tag">Tipografika</span>
+              </div>
+              <h3 class="project-title">Node 2024 — Dizayn Konferensiyasi</h3>
+              <p class="project-text">
+                Skandinaviya minimalizmi uslubidagi kreativ tadbir sahifasi. Geometrik 3D shakllar, to'q ko'k shriftlar va ro'yxatdan o'tish bloklari.
+              </p>
+              <div class="project-footer">
+                <span class="project-metric"><i class="fa-solid fa-check"></i> Zero Block Dizayn</span>
+                <a href="#contact" class="project-link-btn radius-btn">
+                  <span>Buyurtma berish</span> <i class="fa-solid fa-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ISH JARAYONI / METODOLOGIYA (PROCESS SECTION) -->
+    <section class="section process-section" id="process">
+      <div class="container">
+        <div class="section-header" data-reveal="fade-up">
+          <div class="section-subtitle">
+            <i class="fa-solid fa-list-check"></i> Ish tartibi
+          </div>
+          <h2 class="section-title">
+            G'oyadan Ishga Tushirishgacha — <span class="gradient-text">4 Qadam</span>
+          </h2>
+          <p class="section-desc">
+            Har bir loyiha aniq reja, toza arxitektura va yuqori mas'uliyat bilan yaratiladi.
+          </p>
+        </div>
+
+        <div class="process-grid">
+          <!-- Step 1 -->
+          <div class="process-step-card card radius-pic" data-reveal="fade-up" data-delay="100">
+            <div class="step-badge">1-Qadam</div>
+            <div class="step-icon-box">
+              <i class="fa-solid fa-comments"></i>
+            </div>
+            <h3 class="step-title">Brif & Maqsadni Aniqlash</h3>
+            <p class="step-desc">
+              Mijozning ehtiyoji, saytning vazifasi, maqsadli auditoriya va afzal ko'rilgan ranglar chuqur tahlil qilinadi.
+            </p>
+            <ul class="step-list">
+              <li><i class="fa-solid fa-check"></i> Vazifalar ro'yxati</li>
+              <li><i class="fa-solid fa-check"></i> Maqsadli struktura</li>
+            </ul>
+          </div>
+
+          <!-- Step 2 -->
+          <div class="process-step-card card radius-pic" data-reveal="fade-up" data-delay="200">
+            <div class="step-badge">2-Qadam</div>
+            <div class="step-icon-box">
+              <i class="fa-solid fa-pen-ruler"></i>
+            </div>
+            <h3 class="step-title">UI/UX Dizayn & Qulaylik</h3>
+            <p class="step-desc">
+              Saytning vizual iyerarxiyasi, oq va to'q ko'k ranglar palitrasi, tugmalar radiusi va soyalar uyg'unligi belgilanadi.
+            </p>
+            <ul class="step-list">
+              <li><i class="fa-solid fa-check"></i> Radius & Shriftlar</li>
+              <li><i class="fa-solid fa-check"></i> Qulay navigatsiya</li>
+            </ul>
+          </div>
+
+          <!-- Step 3 -->
+          <div class="process-step-card card radius-pic" data-reveal="fade-up" data-delay="300">
+            <div class="step-badge">3-Qadam</div>
+            <div class="step-icon-box">
+              <i class="fa-solid fa-code"></i>
+            </div>
+            <h3 class="step-title">Toza Kod & Animatsiyalar</h3>
+            <p class="step-desc">
+              HTML5, CSS3, Bootstrap yordamida pikselma-piksel aniqlikda kod teriladi. Silliq harakatlar va micro-interactionlar qo'shiladi.
+            </p>
+            <ul class="step-list">
+              <li><i class="fa-solid fa-check"></i> Toza semantik kod</li>
+              <li><i class="fa-solid fa-check"></i> Buttery-smooth animatsiya</li>
+            </ul>
+          </div>
+
+          <!-- Step 4 -->
+          <div class="process-step-card card radius-pic" data-reveal="fade-up" data-delay="400">
+            <div class="step-badge">4-Qadam</div>
+            <div class="step-icon-box">
+              <i class="fa-solid fa-rocket"></i>
+            </div>
+            <h3 class="step-title">Sinov & Jonli Ishga Tushirish</h3>
+            <p class="step-desc">
+              Sayt telefon, planshet va kompyuterlarda to'liq sinovdan o'tkaziladi. Git orqali hostingga joylanadi va topshiriladi.
+            </p>
+            <ul class="step-list">
+              <li><i class="fa-solid fa-check"></i> Cross-browser test</li>
+              <li><i class="fa-solid fa-check"></i> To'liq deploy qilish</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- INTERAKTIV VIBE LAB / KOD LABORATORIYASI -->
+    <section class="section playground-section" id="playground">
+      <div class="container">
+        <div class="section-header" data-reveal="fade-up">
+          <div class="section-subtitle">
+            <i class="fa-solid fa-sliders"></i> Interaktiv Tajriba
+          </div>
+          <h2 class="section-title">
+            Temur'ning <span class="gradient-text">Vibe Laboratoriyasi</span>
+          </h2>
+          <p class="section-desc">
+            Quyidagi sozlamalarni o'zgartirib ko'ring va zamonaviy UI/UX komponenti qanday jonlanishini o'z ko'zingiz bilan his eting!
+          </p>
+        </div>
+
+        <div class="playground-card card radius-pic" data-reveal="zoom-in">
+          <div class="playground-grid">
+            <!-- Controls Column -->
+            <div class="playground-controls">
+              <h3 class="controls-title"><i class="fa-solid fa-gear"></i> Komponent Sozlamalari</h3>
+              
+              <!-- Border Radius Slider -->
+              <div class="control-group">
+                <div class="control-label-row">
+                  <label for="sliderRadius">Burchak radiusi (radius-btn & pic):</label>
+                  <span class="control-val" id="radiusVal">24px</span>
+                </div>
+                <input type="range" id="sliderRadius" min="0" max="40" value="24" class="custom-slider">
+              </div>
+
+              <!-- Shadow Intensity Slider -->
+              <div class="control-group">
+                <div class="control-label-row">
+                  <label for="sliderShadow">Soya chuqurligi (Shadow UX):</label>
+                  <span class="control-val" id="shadowVal">O'rtacha</span>
+                </div>
+                <input type="range" id="sliderShadow" min="1" max="4" value="2" class="custom-slider">
+              </div>
+
+              <!-- Accent Color Picker -->
+              <div class="control-group">
+                <label>Aksent Rang Uslubi:</label>
+                <div class="color-palette-picks">
+                  <button class="color-pick-btn active" data-color="#0a192f" style="background: #0a192f;" title="To'q Ko'k (Klassik)"></button>
+                  <button class="color-pick-btn" data-color="#1e40af" style="background: #1e40af;" title="Qirollik Ko'ki"></button>
+                  <button class="color-pick-btn" data-color="#0284c7" style="background: #0284c7;" title="Yorqin Moviy"></button>
+                  <button class="color-pick-btn" data-color="#059669" style="background: #059669;" title="Zumrad Yashil"></button>
+                </div>
+              </div>
+
+              <!-- Motion Animation Toggle -->
+              <div class="control-group">
+                <label>Interaktiv Puls & Glow:</label>
+                <div class="toggle-btn-row">
+                  <button class="btn btn-outline radius-btn vibe-toggle-btn active" id="btnGlowToggle">
+                    <i class="fa-solid fa-sparkles"></i> <span>Glow: Yoqilgan</span>
+                  </button>
+                  <button class="btn btn-outline radius-btn" id="btnResetLab">
+                    <i class="fa-solid fa-rotate-left"></i> <span>Asliga qaytarish</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Live Preview Column -->
+            <div class="playground-preview-box">
+              <div class="preview-header">
+                <span class="browser-dot red"></span>
+                <span class="browser-dot yellow"></span>
+                <span class="browser-dot green"></span>
+                <span class="preview-url">temur.dev/interactive-preview</span>
+              </div>
+
+              <div class="preview-stage">
+                <!-- Target Dynamic Demo Card -->
+                <div class="demo-card" id="demoCard">
+                  <div class="demo-card-badge">
+                    <span class="pulse-dot"></span> Live Vibe Card
+                  </div>
+                  <h4 class="demo-card-title">Temur Muhammadaliyev</h4>
+                  <p class="demo-card-desc">
+                    To'q ko'k va oq dizayn, silliq harakatlar va zamonaviy UX arxitekturasi.
+                  </p>
+                  <div class="demo-card-footer">
+                    <button class="demo-card-btn radius-btn" id="demoCardBtn">
+                      <span>Namuna Tugma</span>
+                      <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                    <span class="demo-card-meta"><i class="fa-solid fa-shield-halved"></i> 100% Toza Kod</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Live CSS Output Box -->
+              <div class="code-preview-box">
+                <div class="code-preview-header">
+                  <span>CSS Natijasi:</span>
+                  <button class="copy-css-btn radius-btn" id="btnCopyCss" title="Kodni nusxalash">
+                    <i class="fa-regular fa-copy"></i> Nusxalash
+                  </button>
+                </div>
+                <pre class="code-snippet" id="liveCssCode"><code>.vibe-element {
+  border-radius: 24px;
+  box-shadow: 0 15px 35px rgba(10, 25, 47, 0.12);
+  background: #ffffff;
+  color: #0a192f;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}</code></pre>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- KO'P SO'RALADIGAN SAVOLLAR (FAQ SECTION) -->
+    <section class="section faq-section" id="faq">
+      <div class="container">
+        <div class="section-header" data-reveal="fade-up">
+          <div class="section-subtitle">
+            <i class="fa-solid fa-circle-question"></i> Savol-Javoblar
+          </div>
+          <h2 class="section-title">
+            Ko'p So'raladigan <span class="gradient-text">Savollar</span>
+          </h2>
+          <p class="section-desc">
+            Men va xizmatlarim haqida eng ko'p beriladigan savollarga aniq va samimiy javoblar.
+          </p>
+        </div>
+
+        <div class="faq-accordion-wrapper" data-reveal="fade-up">
+          <!-- FAQ Item 1 -->
+          <div class="faq-item card radius-pic active">
+            <button class="faq-question-btn" aria-expanded="true">
+              <span class="faq-q-text">12 yoshda qanday qilib sifatli veb-sayt yarata olasiz?</span>
+              <span class="faq-icon"><i class="fa-solid fa-chevron-down"></i></span>
+            </button>
+            <div class="faq-answer">
+              <p>
+                Dasturlashda yosh emas, intizom, qiziquvchanlik va har kungi amaliyot muhim. Men kompyuter qarshisida vaqt o'tkazishni emas, balki real natija yaratishni yaxshi ko'raman. HTML5, CSS3, Bootstrap va zamonaviy Vibe Coding vositalari orqali xuddi katta yoshli dasturchilar kabi toza va mustahkam kod yoza olaman.
+              </p>
+            </div>
+          </div>
+
+          <!-- FAQ Item 2 -->
+          <div class="faq-item card radius-pic">
+            <button class="faq-question-btn" aria-expanded="false">
+              <span class="faq-q-text">Bitta veb-saytni tayyorlash qancha vaqt oladi?</span>
+              <span class="faq-icon"><i class="fa-solid fa-chevron-down"></i></span>
+            </button>
+            <div class="faq-answer">
+              <p>
+                Saytning murakkabligiga qarab: oddiy bitta sahifali landing page 1–3 kun ichida to'liq tayyor bo'ladi. Tilda platformasidagi loyihalar esa 2–4 kun ichida to'liq ishga tushiriladi. Vibe coding tezkorligi tufayli vaqtni behuda sarflamayman.
+              </p>
+            </div>
+          </div>
+
+          <!-- FAQ Item 3 -->
+          <div class="faq-item card radius-pic">
+            <button class="faq-question-btn" aria-expanded="false">
+              <span class="faq-q-text">Saytlar barcha smartfon va planshetlarda to'g'ri ko'rinadimi?</span>
+              <span class="faq-icon"><i class="fa-solid fa-chevron-down"></i></span>
+            </button>
+            <div class="faq-answer">
+              <p>
+                Albatta! Men har doim <strong>Mobile-First</strong> tamoyili va Bootstrap grid tizimidan foydalanaman. Sayt iPhone, Android, planshet va katta monitorlarda ham silliq, qulay va chiroyli ochiladi.
+              </p>
+            </div>
+          </div>
+
+          <!-- FAQ Item 4 -->
+          <div class="faq-item card radius-pic">
+            <button class="faq-question-btn" aria-expanded="false">
+              <span class="faq-q-text">Tilda yoki toza HTML/CSS — qaysi biri menga mos keladi?</span>
+              <span class="faq-icon"><i class="fa-solid fa-chevron-down"></i></span>
+            </button>
+            <div class="faq-answer">
+              <p>
+                Agar sizga sayt matnlarini kelajakda o'zingiz oson o'zgartirish kerak bo'lsa va tezkor ishga tushirish lozim bo'lsa — Tilda ideal variant. Agar sayt maksimal tezkor, individual animatsiyalar va o'zgacha dizaynga ega bo'lishini istasangiz — toza HTML/CSS/Bootstrap eng to'g'ri tanlovdir.
+              </p>
+            </div>
+          </div>
+
+          <!-- FAQ Item 5 -->
+          <div class="faq-item card radius-pic">
+            <button class="faq-question-btn" aria-expanded="false">
+              <span class="faq-q-text">Siz bilan qanday bog'lansam bo'ladi?</span>
+              <span class="faq-icon"><i class="fa-solid fa-chevron-down"></i></span>
+            </button>
+            <div class="faq-answer">
+              <p>
+                Menga to'g'ridan-to'g'ri <strong>+998 90 560 73 74</strong> raqamiga qo'ng'iroq qilishingiz, Telegram orqali yozishingiz yoki quyidagi aloqa formasini to'ldirishingiz mumkin. Men har doim aloqadaman!
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ALOQA BO'LIMI (CONTACT SECTION) -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <div class="section-header" data-reveal="fade-up">
+          <div class="section-subtitle">
+            <i class="fa-solid fa-paper-plane"></i> Muloqot
+          </div>
+          <h2 class="section-title">
+            Birgalikda <span class="gradient-text">Ajoyib Veb-sayt</span> Yaratamiz!
+          </h2>
+          <p class="section-desc">
+            Yangi loyiha, g'oya yoki hamkorlik uchun men bilan bog'laning. Men har doim yangi sinovlarga tayyorman!
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Left: Direct Contact Information Card -->
+          <div class="contact-info-card card radius-pic" data-reveal="fade-right">
+            <h3 class="contact-card-title">Aloqa Ma'lumotlari</h3>
+            <p class="contact-card-desc">
+              Qo'ng'iroq qiling yoki xabar qoldiring. Har bir murojaatga tez va batafsil javob beraman.
+            </p>
+
+            <!-- Phone Call Block -->
+            <div class="contact-method-item">
+              <div class="method-icon-box phone-box">
+                <i class="fa-solid fa-phone-volume"></i>
+              </div>
+              <div class="method-content">
+                <span class="method-label">Telefon raqamim:</span>
+                <a href="tel:+998905607374" class="method-value phone-link" id="contactPhoneLink">+998 90 560 73 74</a>
+                <button class="copy-btn radius-btn" id="btnCopyPhone" title="Raqamdan nusxa olish">
+                  <i class="fa-regular fa-copy"></i> Nusxa olish
+                </button>
+              </div>
+            </div>
+
+            <!-- Location Block -->
+            <div class="contact-method-item">
+              <div class="method-icon-box location-box">
+                <i class="fa-solid fa-map-location-dot"></i>
+              </div>
+              <div class="method-content">
+                <span class="method-label">Manzil:</span>
+                <span class="method-value">O'zbekiston, Farg'ona viloyati, Quva tumani, Orifboy</span>
+                <span class="method-hint"><i class="fa-solid fa-circle-check"></i> Masofaviy (Remote) va joyida ishlash</span>
+              </div>
+            </div>
+
+            <!-- Developer Status Block -->
+            <div class="contact-method-item">
+              <div class="method-icon-box status-box">
+                <i class="fa-solid fa-laptop-code"></i>
+              </div>
+              <div class="method-content">
+                <span class="method-label">Ish holati:</span>
+                <span class="method-value status-available">
+                  <span class="pulse-dot"></span> Yangi loyihalar uchun ochiq
+                </span>
+                <span class="method-hint">Javob berish vaqti: 15–30 daqiqa</span>
+              </div>
+            </div>
+
+            <!-- Quick Direct Call CTA Banner -->
+            <div class="direct-call-banner radius-pic">
+              <div class="banner-text">
+                <strong>Savollaringiz bormi?</strong>
+                <p>Hozirning o'zidayoq qo'ng'iroq qiling!</p>
+              </div>
+              <a href="tel:+998905607374" class="btn btn-primary radius-btn" id="directCallNowBtn">
+                <i class="fa-solid fa-phone"></i> Qo'ng'iroq
+              </a>
+            </div>
+          </div>
+
+          <!-- Right: Interactive Contact Form -->
+          <div class="contact-form-card card radius-pic" data-reveal="fade-left">
+            <h3 class="contact-card-title">Xabar Yuborish</h3>
+            <p class="contact-card-desc">Loyihangiz haqida yozing, tez orada siz bilan bog'lanaman.</p>
+
+            <form class="contact-form" id="contactForm" novalidate>
+              <!-- Full Name Field -->
+              <div class="form-group">
+                <label for="userName" class="form-label">Ismingiz <span class="required-star">*</span></label>
+                <div class="input-wrapper">
+                  <i class="fa-regular fa-user input-icon"></i>
+                  <input type="text" id="userName" name="userName" class="form-input radius-btn" placeholder="Masalan: Sardor Aliyev" required>
+                </div>
+                <span class="form-error-msg" id="nameError">Iltimos, ismingizni kiriting</span>
+              </div>
+
+              <!-- Phone Number Field -->
+              <div class="form-group">
+                <label for="userPhone" class="form-label">Telefon raqamingiz <span class="required-star">*</span></label>
+                <div class="input-wrapper">
+                  <i class="fa-solid fa-phone input-icon"></i>
+                  <input type="tel" id="userPhone" name="userPhone" class="form-input radius-btn" placeholder="+998 90 123 45 67" required>
+                </div>
+                <span class="form-error-msg" id="phoneError">Iltimos, telefon raqamingizni to'g'ri kiriting</span>
+              </div>
+
+              <!-- Project Type Selection -->
+              <div class="form-group">
+                <label for="projectType" class="form-label">Loyiha turi</label>
+                <div class="input-wrapper">
+                  <i class="fa-solid fa-layer-group input-icon"></i>
+                  <select id="projectType" name="projectType" class="form-select radius-btn">
+                    <option value="landing">Biznes Landing Page (Bir sahifali sayt)</option>
+                    <option value="tilda">Tilda Platformasida Sayt</option>
+                    <option value="ecommerce">E-Commerce / Katalog Veb-sayti</option>
+                    <option value="custom">Maxsus Vibe Coding Loyihasi</option>
+                    <option value="consultation">Dastlabki maslahat olish</option>
+                  </select>
+                </div>
+              </div>
+
+              <!-- Message Field -->
+              <div class="form-group">
+                <label for="userMessage" class="form-label">Loyiha haqida qisqacha</label>
+                <div class="input-wrapper textarea-wrapper">
+                  <i class="fa-regular fa-comment-dots input-icon textarea-icon"></i>
+                  <textarea id="userMessage" name="userMessage" rows="4" class="form-textarea radius-pic" placeholder="Sayt nima haqida bo'lishi va qanday talablar borligini yozing..."></textarea>
+                </div>
+              </div>
+
+              <!-- Submit Button -->
+              <button type="submit" class="btn btn-primary btn-block radius-btn motion-btn" id="btnSubmitForm">
+                <span>Xabarni Yuborish</span>
+                <i class="fa-solid fa-paper-plane"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="#hero" class="brand-logo footer-logo">
+            <span class="logo-box">TM</span>
+            <span class="logo-text">Temur<span class="accent-dot">.</span>dev</span>
+          </a>
+          <p class="footer-tagline">
+            12 yoshli yosh veb-dasturchi. Oq va to'q ko'k ranglar uyg'unligida, kuchli UX va zamonaviy Vibe Coding bilan kelajak vebini yaratmoqdaman.
+          </p>
+          <div class="footer-location-chip">
+            <i class="fa-solid fa-location-dot"></i> O'zbekiston, Farg'ona, Quva, Orifboy
+          </div>
+        </div>
+
+        <div class="footer-links-col">
+          <h4 class="footer-heading">Tezkor Sahifalar</h4>
+          <ul class="footer-nav">
+            <li><a href="#hero"><i class="fa-solid fa-angle-right"></i> Bosh sahifa</a></li>
+            <li><a href="#about"><i class="fa-solid fa-angle-right"></i> Men haqimda</a></li>
+            <li><a href="#skills"><i class="fa-solid fa-angle-right"></i> Ko'nikmalar</a></li>
+            <li><a href="#vibe"><i class="fa-solid fa-angle-right"></i> Vibe Coding</a></li>
+            <li><a href="#projects"><i class="fa-solid fa-angle-right"></i> Loyihalar</a></li>
+            <li><a href="#contact"><i class="fa-solid fa-angle-right"></i> Aloqa</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-contact-col">
+          <h4 class="footer-heading">To'g'ridan-to'g'ri Aloqa</h4>
+          <p class="footer-contact-item">
+            <i class="fa-solid fa-phone"></i>
+            <a href="tel:+998905607374">+998 90 560 73 74</a>
+          </p>
+          <p class="footer-contact-item">
+            <i class="fa-solid fa-envelope"></i>
+            <span>temur.dev.quva@gmail.com</span>
+          </p>
+          <p class="footer-contact-item">
+            <i class="fa-solid fa-clock"></i>
+            <span>Har kuni: 08:00 – 21:00</span>
+          </p>
+          <a href="tel:+998905607374" class="btn btn-outline radius-btn footer-btn">
+            <i class="fa-solid fa-headset"></i> Qo'ng'iroq qilish
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="copyright-text">
+          &copy; <span id="currentYear">2026</span> <strong>Temur Muhammadaliyev</strong>. Barcha huquqlar himoyalangan.
+        </p>
+        <p class="footer-vibe-note">
+          Mehr va yuqori <span class="vibe-heart">⚡</span> vibe bilan yaratilgan.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- BACK TO TOP BUTTON -->
+  <button class="back-to-top-btn radius-btn" id="backToTopBtn" aria-label="Yuqoriga qaytish" title="Yuqoriga qaytish">
+    <svg class="progress-ring" width="46" height="46">
+      <circle class="progress-ring-circle" stroke="#1e40af" stroke-width="3" fill="transparent" r="20" cx="23" cy="23"/>
+    </svg>
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <!-- FLOATING QUICK CALL BUTTON FOR MOBILE -->
+  <a href="tel:+998905607374" class="floating-quick-call radius-btn" id="floatingQuickCall" aria-label="Tezkor qo'ng'iroq">
+    <i class="fa-solid fa-phone"></i>
+    <span class="call-text">Qo'ng'iroq</span>
+  </a>
+
+  <!-- PROJECT DETAILS MODALS -->
+  <!-- Modal 1: Agency -->
+  <div class="modal-backdrop" id="modalAgency">
+    <div class="modal-card card radius-pic">
+      <button class="modal-close-btn radius-btn" aria-label="Yopish">&times;</button>
+      <div class="modal-media">
+        <img src="assets/project_agency.jpg" alt="Nexus Agency" class="modal-img radius-pic">
+      </div>
+      <div class="modal-content-area">
+        <span class="project-badge-top">Biznes Landing</span>
+        <h3 class="modal-title">Nexus — Korporativ Agentlik Veb-sayti</h3>
+        <p class="modal-desc">
+          Ushbu loyiha zamonaviy korporativ brendlar uchun yaratilgan bo'lib, uning asosiy afzalligi to'q ko'k va toza oq ranglar simfoniyasidir.
+        </p>
+        <ul class="modal-specs">
+          <li><strong>Qo'llanilgan:</strong> HTML5, CSS3, Bootstrap 5, Flexbox</li>
+          <li><strong>Xususiyatlari:</strong> Silliq scroll, interaktiv statistika, konversiyaga yo'naltirilgan tugmalar</li>
+          <li><strong>Moslashuv:</strong> 100% Mobile, Tablet, Desktop</li>
+        </ul>
+        <div class="modal-actions">
+          <a href="tel:+998905607374" class="btn btn-primary radius-btn">
+            <i class="fa-solid fa-phone"></i> Shunday saytga buyurtma berish
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 2: Tech Store -->
+  <div class="modal-backdrop" id="modalTech">
+    <div class="modal-card card radius-pic">
+      <button class="modal-close-btn radius-btn" aria-label="Yopish">&times;</button>
+      <div class="modal-media">
+        <img src="assets/project_techstore.jpg" alt="Aetherial Tech Store" class="modal-img radius-pic">
+      </div>
+      <div class="modal-content-area">
+        <span class="project-badge-top">E-Commerce</span>
+        <h3 class="modal-title">Aetherial — Kelajak Gadjetlari Do'koni</h3>
+        <p class="modal-desc">
+          Yuqori texnologiyali gadjetlar uchun yaratilgan e-commerce platformasi. Neon ko'k aksentlar va shisha effekti (glassmorphism) bilan bezatilgan kartalar.
+        </p>
+        <ul class="modal-specs">
+          <li><strong>Qo'llanilgan:</strong> HTML5, CSS Grid, Modern JS, Glassmorphism</li>
+          <li><strong>Xususiyatlari:</strong> Mahsulotlarni saralash, savatcha animatsiyasi, 3D hover</li>
+          <li><strong>Moslashuv:</strong> Barcha qurilmalarda tezkor yuklanish</li>
+        </ul>
+        <div class="modal-actions">
+          <a href="tel:+998905607374" class="btn btn-primary radius-btn">
+            <i class="fa-solid fa-phone"></i> Shunday saytga buyurtma berish
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 3: Cafe -->
+  <div class="modal-backdrop" id="modalCafe">
+    <div class="modal-card card radius-pic">
+      <button class="modal-close-btn radius-btn" aria-label="Yopish">&times;</button>
+      <div class="modal-media">
+        <img src="assets/project_cafe.jpg" alt="Aurora Restaurant" class="modal-img radius-pic">
+      </div>
+      <div class="modal-content-area">
+        <span class="project-badge-top">Restoran & Kafe</span>
+        <h3 class="modal-title">Aurora — Premium Restoran va Qahvaxona</h3>
+        <p class="modal-desc">
+          Elita restoranlar va kafe mehmonlari uchun qulay interfeys. Stol bron qilish, menyuni taomlar bo'yicha ko'rish va nafis fotografik kompozitsiyalar.
+        </p>
+        <ul class="modal-specs">
+          <li><strong>Qo'llanilgan:</strong> HTML5, CSS3, Bootstrap komponentlari</li>
+          <li><strong>Xususiyatlari:</strong> Stol band qilish formasi, interaktiv menyu, lokatsiya ma'lumoti</li>
+          <li><strong>Moslashuv:</strong> Mobil telefon orqali 1 bosishda bron qilish</li>
+        </ul>
+        <div class="modal-actions">
+          <a href="tel:+998905607374" class="btn btn-primary radius-btn">
+            <i class="fa-solid fa-phone"></i> Shunday saytga buyurtma berish
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 4: Creative Studio -->
+  <div class="modal-backdrop" id="modalCreative">
+    <div class="modal-card card radius-pic">
+      <button class="modal-close-btn radius-btn" aria-label="Yopish">&times;</button>
+      <div class="modal-media">
+        <img src="assets/project_creative.jpg" alt="Node 2024 Conference" class="modal-img radius-pic">
+      </div>
+      <div class="modal-content-area">
+        <span class="project-badge-top">Tilda & Kreativ</span>
+        <h3 class="modal-title">Node 2024 — Dizayn Konferensiyasi</h3>
+        <p class="modal-desc">
+          Xalqaro darajadagi dizayn festivali uchun yaratilgan sayt. Skandinaviya uslubidagi keng bo'shliqlar, qat'iy to'q ko'k shriftlar va geometrik 3D vizual elementlar.
+        </p>
+        <ul class="modal-specs">
+          <li><strong>Qo'llanilgan:</strong> Tilda Zero Block, Maxsus CSS scriptlari</li>
+          <li><strong>Xususiyatlari:</strong> Step-by-step ro'yxatdan o'tish, spikerlar jadvali</li>
+          <li><strong>Moslashuv:</strong> Retina displeylar uchun yuqori aniqlik</li>
+        </ul>
+        <div class="modal-actions">
+          <a href="tel:+998905607374" class="btn btn-primary radius-btn">
+            <i class="fa-solid fa-phone"></i> Shunday saytga buyurtma berish
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- TOAST NOTIFICATION CONTAINER -->
+  <div class="toast-notification" id="toastNotification">
+    <div class="toast-icon"><i class="fa-solid fa-circle-check"></i></div>
+    <div class="toast-message" id="toastMessage">Xabar muvaffaqiyatli amalga oshirildi!</div>
+  </div>
+
+  <!-- Custom JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
